@@ -31,8 +31,8 @@ class LancamentoController extends Controller
                                     ->get(['lancamento.lancamento', 'lancamento.usuario_id', 'lancamento.tipo_lancamento', 'lancamento.descricao', 'lancamento.valor', 'lancamento.debito_credito', 'tipodespesa.descricao as tipo']);
 
 
-        print_r($request->header('token'));
-        exit;
+        // print_r($request->header('token'));
+        // exit;
 
 
         return response()->json($lancamento, 200);
